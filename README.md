@@ -23,6 +23,12 @@ CI/CD Workflow:
 
 8.  Code moves into production
 
+### Source Control in Synapse Studio
+
+Documentation link: [https://docs.microsoft.com/en-us/azure/synapse-analytics/cicd/source-control](https://docs.microsoft.com/en-us/azure/synapse-analytics/cicd/source-control)
+
+
+
 ![Graphical user interface, text, application, email Description automatically generated](media/050428b6a019fc09fa97f166a6851f04.png)
 
 Collaboration branch –
