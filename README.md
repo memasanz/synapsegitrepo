@@ -31,7 +31,7 @@ Documentation link: [https://docs.microsoft.com/en-us/azure/synapse-analytics/ci
 
 ![Graphical user interface, text, application, email Description automatically generated](media/050428b6a019fc09fa97f166a6851f04.png)
 
-Collaboration branch –
+### Collaboration branch –
 
 ![Text Description automatically generated](media/49172ebcf682d217b49bd5227119900c.png)
 
@@ -50,9 +50,9 @@ In your working branch create a notebook.
 
 ![Graphical user interface, text, application, email Description automatically generated](media/4a7066a501636ea7b327ad6f9da6e4e2.png)
 
-Commit the change.
+### Commit the change.
 
-Note the change added a working branch
+### Note the change added a working branch
 
 ![Graphical user interface, text, application Description automatically generated](media/b7e5ed08ddb4f76f479c6ea7aff384ce.png)
 
@@ -62,7 +62,8 @@ Note the change added a working branch
 
 ![Graphical user interface, text, application, email Description automatically generated](media/6f354f2f1b0d105dae12d3c01ba896a7.png)
 
-Merge pull request
+Merge Pull Requset:
+===============
 
 ![Graphical user interface, text, application, email Description automatically generated](media/95e8c4e10611881e3f46885b218876df.png)
 
