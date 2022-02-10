@@ -432,7 +432,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "0318a6b5-72a7-4d98-b0d6-7072184ec5ed"
+						"spark.autotune.trackingId": "12b1b053-68f5-4e77-b760-124621777044"
 					}
 				},
 				"metadata": {
@@ -457,15 +457,13 @@
 						"sparkVersion": "3.1",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56,
-						"automaticScaleJobs": false
+						"memory": 56
 					},
 					"sessionKeepAliveTimeout": 30
 				},
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"%run Notebook 1"
 						],
@@ -516,7 +514,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "0e946d7c-fdd8-435b-841b-ade6f9a89587"
+						"spark.autotune.trackingId": "b648514f-ea74-4eeb-807e-1a3eaad9f148"
 					}
 				},
 				"metadata": {
@@ -553,6 +551,7 @@
 							"\r\n",
 							"print('hello world')\r\n",
 							"print('hello 2')\r\n",
+							"print('hello 3')\r\n",
 							"\r\n",
 							"return_value = 'Notebook1-test1-branch'\r\n",
 							"\r\n",
@@ -601,7 +600,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "d1ebe56e-f68b-493b-9e14-a0d259089c1d"
+						"spark.autotune.trackingId": "9390a425-568c-46db-9189-6297836c8aa0"
 					}
 				},
 				"metadata": {
@@ -619,8 +618,10 @@
 				"cells": [
 					{
 						"cell_type": "code",
+						"metadata": {},
 						"source": [
-							"print('Notebook2')"
+							"print('Notebook2')\r\n",
+							"print('Notebook2 again')"
 						],
 						"outputs": [],
 						"execution_count": null
