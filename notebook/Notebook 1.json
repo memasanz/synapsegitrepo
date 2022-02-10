@@ -3,17 +3,21 @@
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "pool01",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
 			"numExecutors": 2,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "85cf9422-7630-46d7-b329-03f4e3c14773"
+				"spark.autotune.trackingId": "c5e6d7ec-2856-4afb-850a-5c31b11e3d17"
 			}
 		},
 		"metadata": {
@@ -21,10 +25,25 @@
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/5da07161-3770-4a4b-aa43-418cbbb627cf/resourceGroups/mm-synapse-withgit-rg/providers/Microsoft.Synapse/workspaces/mm-synapsewithgit/bigDataPools/pool01",
+				"name": "pool01",
+				"type": "Spark",
+				"endpoint": "https://mm-synapsewithgit.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/pool01",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.1",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -32,7 +51,32 @@
 			{
 				"cell_type": "code",
 				"source": [
-					"print('hello world')"
+					"from notebookutils import mssparkutils\r\n",
+					"\r\n",
+					"print('hello world')\r\n",
+					"print('hello 2')\r\n",
+					"\r\n",
+					"return_value = 'Notebook1-test1-branch'\r\n",
+					"\r\n",
+					"mssparkutils.notebook.exit(return_value)"
+				],
+				"execution_count": 3
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
 				],
 				"execution_count": null
 			}
