@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "0e946d7c-fdd8-435b-841b-ade6f9a89587"
+				"spark.autotune.trackingId": "b648514f-ea74-4eeb-807e-1a3eaad9f148"
 			}
 		},
 		"metadata": {
@@ -55,6 +55,7 @@
 					"\r\n",
 					"print('hello world')\r\n",
 					"print('hello 2')\r\n",
+					"print('hello 3')\r\n",
 					"\r\n",
 					"return_value = 'Notebook1-test1-branch'\r\n",
 					"\r\n",
