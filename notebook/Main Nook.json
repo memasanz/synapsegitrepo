@@ -1,5 +1,5 @@
 {
-	"name": "Notebook 1",
+	"name": "Main Nook",
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "c5e6d7ec-2856-4afb-850a-5c31b11e3d17"
+				"spark.autotune.trackingId": "8dfe9185-05bb-4868-943d-1aac6c4a1c1d"
 			}
 		},
 		"metadata": {
@@ -51,16 +51,9 @@
 			{
 				"cell_type": "code",
 				"source": [
-					"from notebookutils import mssparkutils\r\n",
-					"\r\n",
-					"print('hello world')\r\n",
-					"print('hello 2')\r\n",
-					"\r\n",
-					"return_value = 'Notebook1-test1-branch'\r\n",
-					"\r\n",
-					"mssparkutils.notebook.exit(return_value)"
+					"%run Notebook 1"
 				],
-				"execution_count": 3
+				"execution_count": 6
 			},
 			{
 				"cell_type": "code",
