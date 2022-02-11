@@ -432,7 +432,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "12b1b053-68f5-4e77-b760-124621777044"
+						"spark.autotune.trackingId": "970f72a0-6e7a-451b-9a88-7a54e38e132d"
 					}
 				},
 				"metadata": {
@@ -457,18 +457,20 @@
 						"sparkVersion": "3.1",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"automaticScaleJobs": false
 					},
 					"sessionKeepAliveTimeout": 30
 				},
 				"cells": [
 					{
 						"cell_type": "code",
+						"metadata": {},
 						"source": [
-							"%run Notebook 1"
+							"%run Notebook 5"
 						],
 						"outputs": [],
-						"execution_count": 3
+						"execution_count": 5
 					},
 					{
 						"cell_type": "code",
@@ -600,7 +602,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "9390a425-568c-46db-9189-6297836c8aa0"
+						"spark.autotune.trackingId": "d1ebe56e-f68b-493b-9e14-a0d259089c1d"
 					}
 				},
 				"metadata": {
@@ -618,10 +620,8 @@
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
-							"print('Notebook2')\r\n",
-							"print('Notebook2 again')"
+							"print('Notebook2')"
 						],
 						"outputs": [],
 						"execution_count": null
@@ -712,6 +712,114 @@
 						"cell_type": "code",
 						"source": [
 							"print('notebook 4')"
+						],
+						"outputs": [],
+						"execution_count": null
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('workspaceName'), '/Notebook 5')]",
+			"type": "Microsoft.Synapse/workspaces/notebooks",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"nbformat": 4,
+				"nbformat_minor": 2,
+				"bigDataPool": {
+					"referenceName": "pool01",
+					"type": "BigDataPoolReference"
+				},
+				"sessionProperties": {
+					"driverMemory": "56g",
+					"driverCores": 8,
+					"executorMemory": "56g",
+					"executorCores": 8,
+					"numExecutors": 2,
+					"conf": {
+						"spark.dynamicAllocation.enabled": "false",
+						"spark.dynamicAllocation.minExecutors": "2",
+						"spark.dynamicAllocation.maxExecutors": "2",
+						"spark.autotune.trackingId": "c91436b8-331a-41d6-b5ca-de7b0bd6f80b"
+					}
+				},
+				"metadata": {
+					"saveOutput": true,
+					"enableDebugMode": false,
+					"kernelspec": {
+						"name": "synapse_pyspark",
+						"display_name": "Synapse PySpark"
+					},
+					"language_info": {
+						"name": "python"
+					},
+					"a365ComputeOptions": {
+						"id": "/subscriptions/5da07161-3770-4a4b-aa43-418cbbb627cf/resourceGroups/mm-synapse-withgit-rg/providers/Microsoft.Synapse/workspaces/mm-synapsewithgit/bigDataPools/pool01",
+						"name": "pool01",
+						"type": "Spark",
+						"endpoint": "https://mm-synapsewithgit.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/pool01",
+						"auth": {
+							"type": "AAD",
+							"authResource": "https://dev.azuresynapse.net"
+						},
+						"sparkVersion": "3.1",
+						"nodeCount": 10,
+						"cores": 8,
+						"memory": 56
+					},
+					"sessionKeepAliveTimeout": 30
+				},
+				"cells": [
+					{
+						"cell_type": "code",
+						"source": [
+							"class Helper:\r\n",
+							"    def __init__(self):\r\n",
+							"        self.message = 'welcome'\r\n",
+							"        self.data_lake_name = ''\r\n",
+							"    def add(self, v1, v2):\r\n",
+							"        return v1 + v2"
+						],
+						"outputs": [],
+						"execution_count": 5
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							"ex = Helper()\r\n",
+							"assert ex.message == 'welcome'\r\n",
+							"assert ex.add(3, 4) == 7"
+						],
+						"outputs": [],
+						"execution_count": 6
+					},
+					{
+						"cell_type": "code",
+						"metadata": {
+							"jupyter": {
+								"source_hidden": false,
+								"outputs_hidden": false
+							},
+							"nteract": {
+								"transient": {
+									"deleting": false
+								}
+							}
+						},
+						"source": [
+							""
 						],
 						"outputs": [],
 						"execution_count": null
