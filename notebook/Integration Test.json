@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e9e4723e-c6d6-493e-b093-2008be9f613d"
+				"spark.autotune.trackingId": "e492b4a3-06f2-4965-93a1-a18a09fb4b21"
 			}
 		},
 		"metadata": {
@@ -53,7 +53,9 @@
 					"ex = Helper()\r\n",
 					"assert ex.message == 'welcome'\r\n",
 					"\r\n",
-					"print(ex.test)"
+					"print(ex.test)\r\n",
+					"\r\n",
+					"print(ex.newmessage)"
 				],
 				"execution_count": null
 			}
