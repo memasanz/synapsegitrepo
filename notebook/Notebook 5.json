@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "5c1de825-5366-4650-b44f-f65661e29553"
+				"spark.autotune.trackingId": "c91436b8-331a-41d6-b5ca-de7b0bd6f80b"
 			}
 		},
 		"metadata": {
@@ -55,10 +55,10 @@
 					"    def __init__(self):\r\n",
 					"        self.message = 'welcome'\r\n",
 					"        self.data_lake_name = ''\r\n",
-					"    def add(v1, v2):\r\n",
+					"    def add(self, v1, v2):\r\n",
 					"        return v1 + v2"
 				],
-				"execution_count": 1
+				"execution_count": 5
 			},
 			{
 				"cell_type": "code",
@@ -75,7 +75,26 @@
 				},
 				"source": [
 					"ex = Helper()\r\n",
-					"assert ex.message == 'welcome'"
+					"assert ex.message == 'welcome'\r\n",
+					"assert ex.add(3, 4) == 7"
+				],
+				"execution_count": 6
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
 				],
 				"execution_count": null
 			}
