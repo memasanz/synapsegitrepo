@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "b648514f-ea74-4eeb-807e-1a3eaad9f148"
+				"spark.autotune.trackingId": "f0665163-e919-410a-9a46-e0d43f630e80"
 			}
 		},
 		"metadata": {
@@ -56,7 +56,7 @@
 					"print('hello world')\r\n",
 					"print('hello 2')\r\n",
 					"print('hello 3')\r\n",
-					"\r\n",
+					"print('hello branch 6')\r\n",
 					"return_value = 'Notebook1-test1-branch'\r\n",
 					"\r\n",
 					"mssparkutils.notebook.exit(return_value)"
