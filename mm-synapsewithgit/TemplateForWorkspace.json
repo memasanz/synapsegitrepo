@@ -432,7 +432,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "970f72a0-6e7a-451b-9a88-7a54e38e132d"
+						"spark.autotune.trackingId": "719dcbda-2adc-4df5-a70a-79037c6c680c"
 					}
 				},
 				"metadata": {
@@ -516,7 +516,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "b648514f-ea74-4eeb-807e-1a3eaad9f148"
+						"spark.autotune.trackingId": "6e934bbb-1917-4a58-9ca0-d6e75f627708"
 					}
 				},
 				"metadata": {
@@ -541,20 +541,22 @@
 						"sparkVersion": "3.1",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56
+						"memory": 56,
+						"automaticScaleJobs": false
 					},
 					"sessionKeepAliveTimeout": 30
 				},
 				"cells": [
 					{
 						"cell_type": "code",
+						"metadata": {},
 						"source": [
 							"from notebookutils import mssparkutils\r\n",
 							"\r\n",
 							"print('hello world')\r\n",
 							"print('hello 2')\r\n",
 							"print('hello 3')\r\n",
-							"\r\n",
+							"print('hello branch 6')\r\n",
 							"return_value = 'Notebook1-test1-branch'\r\n",
 							"\r\n",
 							"mssparkutils.notebook.exit(return_value)"
