@@ -428,7 +428,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "0011bd19-32c8-4d00-9191-a025cfc7c457"
+						"spark.autotune.trackingId": "76b71226-75dc-4e1b-a24b-94b787cab082"
 					}
 				},
 				"metadata": {
@@ -851,7 +851,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "2db08766-ec9e-431d-b5ca-e07b06f94c6e"
+						"spark.autotune.trackingId": "88124957-7c97-41d4-a597-25dbc58d7d1b"
 					}
 				},
 				"metadata": {
@@ -876,15 +876,13 @@
 						"sparkVersion": "3.1",
 						"nodeCount": 10,
 						"cores": 8,
-						"memory": 56,
-						"automaticScaleJobs": false
+						"memory": 56
 					},
 					"sessionKeepAliveTimeout": 30
 				},
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"class Helper:\r\n",
 							"    def __init__(self):\r\n",
