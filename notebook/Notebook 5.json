@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "c91436b8-331a-41d6-b5ca-de7b0bd6f80b"
+				"spark.autotune.trackingId": "62240f61-d0f9-486d-b9b8-12c091ff7093"
 			}
 		},
 		"metadata": {
@@ -55,10 +55,24 @@
 					"    def __init__(self):\r\n",
 					"        self.message = 'welcome'\r\n",
 					"        self.data_lake_name = ''\r\n",
+					"        self.newmessage = 'new message'\r\n",
 					"    def add(self, v1, v2):\r\n",
 					"        return v1 + v2"
 				],
-				"execution_count": 5
+				"execution_count": 19
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**Unit Tests**"
+				]
 			},
 			{
 				"cell_type": "code",
@@ -78,7 +92,74 @@
 					"assert ex.message == 'welcome'\r\n",
 					"assert ex.add(3, 4) == 7"
 				],
-				"execution_count": 6
+				"execution_count": 26
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"**Integration Tests**"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%run Notebook 1"
+				],
+				"execution_count": 27
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"%run Notebook 2"
+				],
+				"execution_count": 28
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"print(ex.newmessage)"
+				],
+				"execution_count": 29
 			},
 			{
 				"cell_type": "code",
