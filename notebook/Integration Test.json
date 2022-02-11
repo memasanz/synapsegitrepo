@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "07ebee60-7992-4be7-9aa9-19bfbf6fa0c2"
+				"spark.autotune.trackingId": "a8d0bbdc-05c7-4c3d-a601-5dfb8175f74c"
 			}
 		},
 		"metadata": {
@@ -54,12 +54,48 @@
 					}
 				},
 				"source": [
+					"print('hello integration test')"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
 					"ex = Helper()\r\n",
 					"assert ex.message == 'welcome'\r\n",
 					"\r\n",
 					"print(ex.test)\r\n",
 					"\r\n",
 					"print(ex.newmessage)"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					""
 				],
 				"execution_count": null
 			}
