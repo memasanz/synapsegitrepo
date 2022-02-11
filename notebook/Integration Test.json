@@ -13,7 +13,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e9e4723e-c6d6-493e-b093-2008be9f613d"
+				"spark.autotune.trackingId": "2d4cfaa7-47fe-4566-b072-a933cf73e1a1"
 			}
 		},
 		"metadata": {
@@ -53,7 +53,26 @@
 					"ex = Helper()\r\n",
 					"assert ex.message == 'welcome'\r\n",
 					"\r\n",
-					"print(ex.test)"
+					""
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"def checknotebook5():\r\n",
+					"    print(ex.test)"
 				],
 				"execution_count": null
 			}
